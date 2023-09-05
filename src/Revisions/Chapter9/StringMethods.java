@@ -1,5 +1,8 @@
 package Revisions.Chapter9;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class StringMethods {
     public static void main(String[] args) {
         String str = "Hi, How are you? I'm studying Java Programming. And You?";
@@ -52,5 +55,11 @@ public class StringMethods {
         System.out.println(str.compareTo(str1)); // If first String is larger than last String, output is positive.
         System.out.println(str.compareTo(str2)); // If first String is smaller than last String, output is negative.
 
+        String text4 = "AABBCAAADEEAA";
+        Pattern pattern = Pattern.compile("AA");
+        Matcher matcher = pattern.matcher(text4);
+        while (matcher.find()) {
+            System.out.println("Found at " + matcher.start() + " _ " + matcher.end());
+        }
     }
 }
