@@ -49,7 +49,6 @@ public class Employee implements Serializable {
             FileOutputStream fileOutputStream = new FileOutputStream(fobj);
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(arrayEmployee);
-            objectOutputStream.flush();
             objectOutputStream.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
