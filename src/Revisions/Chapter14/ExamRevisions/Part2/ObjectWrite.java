@@ -21,6 +21,7 @@ public class ObjectWrite {
 			Scanner input = new Scanner(System.in);
 			System.out.print("Enter the quantity of person : ");
 			int quantity = input.nextInt();
+			if (quantity == 0) quantity = 3;
 
 			for(int i = 0; i < quantity; i++) {
 				Scanner input1 = new Scanner(System.in);
