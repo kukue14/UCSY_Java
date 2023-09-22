@@ -17,7 +17,6 @@ public class StringRead_No_7 {
                 if (str==null) break;
                 System.out.println(str);
                 if (index == 0) min = str.length();
-
                 if (min > str.length()) {
                     minWord = str;
                     min = str.length();
