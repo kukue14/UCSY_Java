@@ -12,6 +12,7 @@ public class OnlyPalindromeRead {
             while ((str = bufferedReader.readLine()) != null) {
                 System.out.println(str);
             }
+            bufferedReader.close();
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
