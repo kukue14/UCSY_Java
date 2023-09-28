@@ -2,8 +2,6 @@ package Exercises;
 
 public class Testing {
     public static void main(String[] args) {
-        int i = 111111;
-        System.out.println(i >>> 2);
-
+        System.out.println(30 - 20 == 10 && Math.abs(20-30) == 10);
     }
 }
