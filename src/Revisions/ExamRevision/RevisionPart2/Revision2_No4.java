@@ -11,19 +11,19 @@ public class Revision2_No4 {
 		int[] stepAvg = new int[payScale[1].length];
 		int gradeTotal = 0;
 
-		for (int col = 0; col < payScale.length; col++) {
-			for (int row = 0; row < payScale[col].length; row++) {
-				gradeTotal += payScale[col][row];
+		for (int row = 0; row < payScale.length; row++) {
+			for (int col = 0; col < payScale[row].length; col++) {
+				gradeTotal += payScale[row][col];
 			}
-			gradeAvg[col] = gradeTotal/payScale[col].length;
+			gradeAvg[row] = gradeTotal/payScale[col].length;
 		}
 		for (int i = 0; i < payScale.length; i++) System.out.println("The average of each grade level are : " + gradeAvg[i]);
 
-		for (int row = 0; row < payScale[1].length; row++) {
-			for (int col = 0; col < payScale.length; col++) {
-				gradeTotal += payScale[col][row];
+		for (int col = 0; col < payScale[1].length; col++) {
+			for (int row = 0; row < payScale.length; row++) {
+				gradeTotal += payScale[row][col];
 			}
-			stepAvg[row] = gradeTotal/payScale.length;
+			stepAvg[col] = gradeTotal/payScale.length;
 		}
 		for (int i = 0; i < payScale[1].length; i++) System.out.println("The average of each step level are : " + stepAvg[i]);
 	}
